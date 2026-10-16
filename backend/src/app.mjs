@@ -77,7 +77,7 @@ app.use(
             const isAllowed =
                 allowedOrigins.includes("*") ||
                 allowedOrigins.includes(cleanOrigin) ||
-                cleanOrigin === "https://secure-bank-nu.vercel.app" ||
+                cleanOrigin === "https://sb-fintech-demo.vercel.app" ||
                 /^https:\/\/.*\.vercel\.app$/.test(cleanOrigin) ||
                 /^https:\/\/.*\.onrender\.com$/.test(cleanOrigin) ||
                 /^http:\/\/localhost:\d+$/.test(cleanOrigin);
