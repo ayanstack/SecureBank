@@ -1,0 +1,67 @@
+export const ROLES = Object.freeze({
+    CUSTOMER: "CUSTOMER",
+    SUPPORT: "SUPPORT",
+    MANAGER: "MANAGER",
+    ADMIN: "ADMIN",
+    SUPER_ADMIN: "SUPER_ADMIN",
+});
+
+export const ACCOUNT_TYPES = Object.freeze({
+    SAVINGS: "SAVINGS",
+    CURRENT: "CURRENT",
+});
+
+export const ACCOUNT_STATUS = Object.freeze({
+    ACTIVE: "ACTIVE",
+    FROZEN: "FROZEN",
+    CLOSED: "CLOSED",
+});
+
+export const TRANSACTION_TYPES = Object.freeze({
+    DEPOSIT: "DEPOSIT",
+    WITHDRAW: "WITHDRAW",
+    TRANSFER: "TRANSFER",
+    REFUND: "REFUND",
+    REVERSAL: "REVERSAL",
+    FEE: "FEE",
+});
+
+export const TRANSACTION_STATUS = Object.freeze({
+    PENDING: "PENDING",
+    SUCCESS: "SUCCESS",
+    FAILED: "FAILED",
+    REVERSED: "REVERSED",
+});
+
+export const BENEFICIARY_STATUS = Object.freeze({
+    ACTIVE: "ACTIVE",
+    INACTIVE: "INACTIVE",
+});
+
+export const OTP_PURPOSES = Object.freeze({
+    EMAIL_VERIFICATION: "EMAIL_VERIFICATION",
+    LOGIN: "LOGIN",
+    TRANSFER: "TRANSFER",
+    PASSWORD_RESET: "PASSWORD_RESET",
+});
+
+export const NOTIFICATION_TYPES = Object.freeze({
+    TRANSACTION: "TRANSACTION",
+    TRANSFER: "TRANSFER",
+    SECURITY: "SECURITY",
+    ACCOUNT: "ACCOUNT",
+    SYSTEM: "SYSTEM",
+});
+
+export const LIMITS = Object.freeze({
+    DAILY_TRANSFER_LIMIT: 50000,
+    MIN_TRANSACTION_AMOUNT: 1,
+    MAX_TRANSACTION_AMOUNT: 1000000,
+    MAX_PIN_ATTEMPTS: 3,
+    PIN_LOCKOUT_MS: 15 * 60 * 1000,
+    MAX_OTP_ATTEMPTS: 5,
+    OTP_EXPIRY_MS: 5 * 60 * 1000,
+    OTP_RESEND_COOLDOWN_MS: 60 * 1000,
+    MAX_FAILED_LOGIN_ATTEMPTS: 5,
+    LOGIN_LOCKOUT_MS: 15 * 60 * 1000,
+});
