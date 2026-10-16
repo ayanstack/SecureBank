@@ -21,11 +21,25 @@ if (missingEnvVars.length > 0) {
 
 const server = http.createServer(app);
 
-const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+const clientOrigin = process.env.CLIENT_URL || "http://localhost:5173,http://localhost:5174";
+const allowedOrigins = clientOrigin.split(",").map((origin) => origin.trim().replace(/\/$/, ""));
 
 const io = new Server(server, {
     cors: {
-        origin: allowedOrigin,
+        origin: (origin, callback) => {
+            if (!origin) return callback(null, true);
+            const cleanOrigin = origin.replace(/\/$/, "");
+            const isAllowed =
+                allowedOrigins.includes("*") ||
+                allowedOrigins.includes(cleanOrigin) ||
+                cleanOrigin === "https://secure-bank-nu.vercel.app" ||
+                /^https:\/\/.*\.vercel\.app$/.test(cleanOrigin) ||
+                /^https:\/\/.*\.onrender\.com$/.test(cleanOrigin) ||
+                /^http:\/\/localhost:\d+$/.test(cleanOrigin);
+
+            if (isAllowed) return callback(null, true);
+            return callback(new Error("Socket CORS origin not allowed"), false);
+        },
         methods: ["GET", "POST"],
         credentials: true,
     },

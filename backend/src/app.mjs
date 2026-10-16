@@ -59,21 +59,37 @@ app.use(
     })
 );
 
-// CORS configuration supporting single or comma-separated origins
+// CORS configuration supporting single or comma-separated origins, with support for Vercel & Render deployments
 const clientOrigin = process.env.CLIENT_URL || "http://localhost:5173,http://localhost:5174";
-const allowedOrigins = clientOrigin.split(",").map((origin) => origin.trim());
+const allowedOrigins = clientOrigin.split(",").map((origin) => origin.trim().replace(/\/$/, ""));
 
 app.use(
     cors({
         origin: (origin, callback) => {
-            // Allow requests with no origin (like mobile apps, curl, postman) or matching origin
-            if (!origin || allowedOrigins.includes(origin) || allowedOrigins.includes("*")) {
+            // Allow requests with no origin (like mobile apps, curl, postman)
+            if (!origin) {
                 return callback(null, true);
             }
-            return callback(new Error("CORS policy violation: origin not allowed"), false);
+
+            const cleanOrigin = origin.replace(/\/$/, "");
+
+            // Match exact allowed origins, wildcard, or vercel preview/production subdomains
+            const isAllowed =
+                allowedOrigins.includes("*") ||
+                allowedOrigins.includes(cleanOrigin) ||
+                cleanOrigin === "https://secure-bank-nu.vercel.app" ||
+                /^https:\/\/.*\.vercel\.app$/.test(cleanOrigin) ||
+                /^https:\/\/.*\.onrender\.com$/.test(cleanOrigin) ||
+                /^http:\/\/localhost:\d+$/.test(cleanOrigin);
+
+            if (isAllowed) {
+                return callback(null, true);
+            }
+
+            return callback(new Error(`CORS policy violation: origin '${origin}' not allowed`), false);
         },
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-        allowedHeaders: ["Content-Type", "Authorization", "Idempotency-Key", "X-Idempotency-Key"],
+        allowedHeaders: ["Content-Type", "Authorization", "Idempotency-Key", "X-Idempotency-Key", "X-Request-Id"],
         credentials: true,
     })
 );
