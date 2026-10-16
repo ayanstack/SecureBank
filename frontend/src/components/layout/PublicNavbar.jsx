@@ -44,13 +44,9 @@ export const PublicNavbar = () => {
           </div>
 
           <div className="flex items-center gap-5 text-white/80">
-            <div className="flex items-center gap-1.5">
-              <Phone className="w-3.5 h-3.5 text-[#10B981]" />
-              <span>24x7 Helpline: <strong className="text-white">+91 6267239091</strong></span>
-            </div>
             <div className="flex items-center gap-1.5 text-white/70">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#D62839]" />
-              <span>VeriSign 256-bit SSL Protected</span>
+              <ShieldCheck className="w-3.5 h-3.5 text-[#10B981]" />
+              <span>Full-Stack MERN Portfolio Project</span>
             </div>
           </div>
         </div>

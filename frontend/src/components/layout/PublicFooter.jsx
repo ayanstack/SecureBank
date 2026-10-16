@@ -119,7 +119,7 @@ export const PublicFooter = () => {
         {/* Bottom Bar: Regulatory & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>
-            &copy; {new Date().getFullYear()} SecureBank Digital Corporation. All rights reserved. Built with precision enterprise MERN architecture.
+            &copy; {new Date().getFullYear()} SecureBank Demo. This is an educational MERN portfolio project built for demonstration purposes only. Not a licensed financial entity.
           </p>
 
           <div className="flex items-center gap-6">
