@@ -64,20 +64,20 @@ export const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Col: Main Marketing Copy */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-white tracking-wide shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-brand-success animate-pulse"></span>
-                Next-Generation Digital Retail Banking
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-xs font-semibold text-amber-200 tracking-wide shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                Educational Banking Simulation • MERN Portfolio Demo
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-                Banking Designed for <br className="hidden sm:block" />
+                Banking Architecture Designed for <br className="hidden sm:block" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-blue-200">
-                  Trust, Speed & Security.
+                  Integrity, Speed & Security.
                 </span>
               </h1>
 
               <p className="text-base sm:text-lg text-white/80 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                Experience seamless 24x7 instant fund transfers, end-to-end encrypted retail accounts, real-time live transaction alerts, and automated official bank statements.
+                An interactive full-stack portfolio simulation demonstrating modern fintech engineering: bcrypt authorization PINs, JWT token rotation, idempotent transfers, NoSQL defense, and live socket alerts.
               </p>
 
               {/* Action Buttons */}
@@ -96,7 +96,7 @@ export const HomePage = () => {
                       to="/register"
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-brand-blue hover:bg-[#0759af] text-white font-bold text-base transition-all duration-150 shadow-lg border border-blue-400/30"
                     >
-                      <span>Open Instant Account</span>
+                      <span>Open Demo Account</span>
                       <ArrowRight className="w-5 h-5" />
                     </Link>
 
@@ -105,7 +105,7 @@ export const HomePage = () => {
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-base transition-all duration-150 border border-white/20"
                     >
                       <Lock className="w-4 h-4 text-blue-300" />
-                      <span>NetBanking Sign In</span>
+                      <span>Demo Sign In</span>
                     </Link>
                   </>
                 )}
@@ -138,12 +138,12 @@ export const HomePage = () => {
                       <Lock className="w-5 h-5 text-[#D62839]" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-base text-[#F7FAFF] leading-tight">NetBanking Access</h3>
-                      <p className="text-xs text-[#94B4DB]">Secure Customer Gateway</p>
+                      <h3 className="font-bold text-base text-[#F7FAFF] leading-tight">Demo Banking Gateway</h3>
+                      <p className="text-xs text-[#94B4DB]">Educational Simulation Mode</p>
                     </div>
                   </div>
-                  <span className="px-2.5 py-1 rounded text-[11px] font-bold bg-[#10B981]/15 text-[#10B981] border border-[#10B981]/30">
-                    Online & Active
+                  <span className="px-2.5 py-1 rounded text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                    Simulation Active
                   </span>
                 </div>
 
@@ -151,21 +151,21 @@ export const HomePage = () => {
                 <div className="py-6 space-y-4">
                   <div className="p-4 rounded-xl bg-[#081526] border border-[#1E4578] space-y-2">
                     <div className="flex items-center justify-between text-xs text-[#94B4DB]">
-                      <span>Supported Services</span>
-                      <span className="font-bold text-[#F7FAFF]">24x7 Real-Time</span>
+                      <span>Simulation Features</span>
+                      <span className="font-bold text-[#F7FAFF]">MERN Architecture</span>
                     </div>
                     <ul className="text-xs space-y-1.5 text-[#F7FAFF] font-medium">
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Instant IMPS/NEFT Money Transfer
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Simulated IMPS/NEFT Money Transfer
                       </li>
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Live Account Freeze & PIN Security
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Account Freeze Switch & PIN Security
                       </li>
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Official PDF & CSV E-Statements
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Sample PDF & CSV E-Statements
                       </li>
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Multi-Session Device Management
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Multi-Session JWT Device Management
                       </li>
                     </ul>
                   </div>
@@ -190,13 +190,13 @@ export const HomePage = () => {
                         className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#D62839] hover:bg-[#BA1E2E] text-white font-bold text-sm transition-colors shadow-glow-red"
                       >
                         <Lock className="w-4 h-4" />
-                        <span>Sign In with Email & Password</span>
+                        <span>Sign In to Demo Portal</span>
                       </Link>
 
                       <div className="text-center">
-                        <span className="text-xs text-[#94B4DB]">New customer? </span>
+                        <span className="text-xs text-[#94B4DB]">New visitor? </span>
                         <Link to="/register" className="text-xs font-bold text-[#D62839] hover:underline">
-                          Register your account now
+                          Create a demo account
                         </Link>
                       </div>
                     </div>
@@ -204,9 +204,9 @@ export const HomePage = () => {
                 </div>
 
                 {/* Footer Advisory */}
-                <div className="pt-4 border-t border-brand-border flex items-center gap-2 text-[11px] text-brand-muted">
-                  <ShieldCheck className="w-4 h-4 text-brand-success flex-shrink-0" />
-                  <span>Never share your Password, PIN, or OTP with anyone. SecureBank will never call requesting credentials.</span>
+                <div className="pt-4 border-t border-brand-border flex items-center gap-2 text-[11px] text-amber-300/90">
+                  <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  <span>Educational Simulation Notice: SecureBank is a portfolio project. Never submit real banking credentials, passwords, or PINs.</span>
                 </div>
               </div>
             </div>
@@ -379,9 +379,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-dark text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 1
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Create Account</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Create Demo Profile</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Fill in your legal details, registered phone number, and a secure password in less than 2 minutes.
+                Provide test mock details and a dummy password in less than 2 minutes without sharing real sensitive data.
               </p>
             </div>
 
@@ -390,9 +390,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-blue text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 2
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Verify Email</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Verify Demo Token</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Receive an authentication token to verify your ownership and securely activate your bank portal access.
+                Use the simulated activation token to verify your ownership and unlock interactive simulation access.
               </p>
             </div>
 
@@ -401,9 +401,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-success text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 3
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Setup PIN & Transact</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Setup Demo PIN & Transact</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Configure your 4-digit transaction PIN, deposit initial funds, and transfer money instantly with zero friction.
+                Configure a mock 4-digit PIN (e.g., 1234), deposit simulated funds, and test instant transfers.
               </p>
             </div>
           </div>
@@ -413,7 +413,7 @@ export const HomePage = () => {
               to={isAuthenticated ? "/dashboard" : "/register"}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-dark hover:bg-brand-blue text-white font-bold text-sm transition-colors shadow-md"
             >
-              <span>{isAuthenticated ? "Go to My Dashboard" : "Begin Digital Registration"}</span>
+              <span>{isAuthenticated ? "Go to My Dashboard" : "Begin Demo Registration"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

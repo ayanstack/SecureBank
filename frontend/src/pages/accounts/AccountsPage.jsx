@@ -247,11 +247,15 @@ export const AccountsPage = () => {
       {/* Top Action Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/15 text-amber-800 border border-amber-500/30 mb-1">
+            <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
+            Simulated Accounts • Virtual Demo Balances
+          </div>
           <h2 className="text-xl sm:text-2xl font-bold text-brand-dark tracking-tight">
             Accounts Portfolio
           </h2>
           <p className="text-xs text-brand-muted mt-0.5">
-            Manage your savings, salary, and current accounts with instant controls.
+            Manage your simulated savings and current accounts. All balances are virtual demo credits.
           </p>
         </div>
 

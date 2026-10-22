@@ -22,16 +22,16 @@ export const PublicFooter = () => {
           <div className="lg:col-span-2 space-y-4">
             <Logo variant="light" size="lg" />
             <p className="text-sm text-[#94B4DB] max-w-sm leading-relaxed">
-              SecureBank is a technology-first digital banking platform providing end-to-end encrypted retail accounts, real-time fund transfers, automated statements, and multi-session security.
+              SecureBank is an educational MERN full-stack banking simulation built for portfolio evaluation and technical interviews. Not a real bank or financial repository.
             </p>
 
             <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2 max-w-sm">
-              <div className="flex items-center gap-2 text-xs font-bold text-white uppercase tracking-wider">
-                <ShieldCheck className="w-4 h-4 text-brand-success" />
-                <span>Certified Banking Security</span>
+              <div className="flex items-center gap-2 text-xs font-bold text-amber-300 uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-amber-400" />
+                <span>Simulation Security Architecture</span>
               </div>
               <p className="text-xs text-white/60">
-                Protected by 256-bit Advanced Encryption Standard (AES), TLS 1.3 encryption, and transaction-level cryptographic PIN verification.
+                Implements production-grade patterns: bcrypt salt hashing, 4-digit PIN verification, idempotent transfers, and JWT session lifecycle rotation.
               </p>
             </div>
           </div>
@@ -119,16 +119,16 @@ export const PublicFooter = () => {
         {/* Bottom Bar: Regulatory & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>
-            &copy; {new Date().getFullYear()} SecureBank Demo. This is an educational MERN portfolio project built for demonstration purposes only. Not a licensed financial entity.
+            &copy; {new Date().getFullYear()} SecureBank Demo — Educational Portfolio Project. Developed for technical demonstration only. Not a licensed or chartered financial institution.
           </p>
 
           <div className="flex items-center gap-6">
-            <Link to="/security" className="hover:text-white transition-colors">Security Policy</Link>
-            <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
-            <Link to="/contact" className="hover:text-white transition-colors">Branch & Contact</Link>
+            <Link to="/security" className="hover:text-white transition-colors">Security Architecture</Link>
+            <Link to="/about" className="hover:text-white transition-colors">About Project</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Developer Contact</Link>
             <span className="text-brand-success font-semibold flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-brand-success animate-pulse"></span>
-              All Banking Systems Operational
+              Simulation Platform Active
             </span>
           </div>
         </div>

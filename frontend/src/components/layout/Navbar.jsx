@@ -92,7 +92,7 @@ export const Navbar = () => {
           </h1>
           <div className="hidden sm:flex items-center gap-1.5 text-[11px] text-[#94B4DB]">
             <Shield className="w-3 h-3 text-[#10B981]" />
-            <span>256-Bit SSL Encrypted Banking Session</span>
+            <span>Educational Banking Session • Simulation Mode</span>
           </div>
         </div>
       </div>

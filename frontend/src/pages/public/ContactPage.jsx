@@ -18,12 +18,12 @@ export const ContactPage = () => {
 
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-300 uppercase tracking-wider">
-            <Phone className="w-3.5 h-3.5" /> 24x7 Customer Care
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
+            <Phone className="w-3.5 h-3.5" /> Project Contact Desk
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Contact & Support Desk</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Portfolio Contact & Feedback</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            Our specialized banking support officers are available 24x7 to assist you with account inquiries, transfer issues, and security reports.
+            Reach out regarding technical architecture inquiries, recruitment opportunities, or portfolio feedback. This is an educational demonstration project.
           </p>
         </div>
       </section>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /accounts
+Disallow: /transfer
+Disallow: /beneficiaries
+Disallow: /transactions
+Disallow: /statements
+Disallow: /notifications
+Disallow: /profile
+Disallow: /ai-assistant
+Disallow: /analytics
+Disallow: /savings
+Disallow: /support

@@ -6,7 +6,8 @@ import { addToast } from '../../features/ui/uiSlice';
 import Logo from '../../components/common/Logo';
 import Input from '../../components/common/Input';
 import Button from '../../components/common/Button';
-import { Mail, ArrowLeft, ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import DemoBanner from '../../components/common/DemoBanner';
+import { Mail, ArrowLeft, ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle } from 'lucide-react';
 
 export const ForgotPasswordPage = () => {
   const dispatch = useDispatch();
@@ -53,17 +54,23 @@ export const ForgotPasswordPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-bg p-4 sm:p-6 select-none">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
-        <div className="text-center mb-6">
-          <div className="inline-block mb-3">
-            <Logo size="default" />
+    <div className="min-h-screen flex flex-col bg-brand-bg select-none">
+      <DemoBanner />
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
+          <div className="text-center mb-6">
+            <div className="inline-block mb-3">
+              <Logo size="default" />
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-amber-500/15 text-amber-800 border border-amber-500/30 mb-2">
+              <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
+              Demo Account Recovery
+            </div>
+            <h2 className="text-2xl font-bold text-brand-dark">Reset Demo Password</h2>
+            <p className="text-xs text-brand-muted mt-1">
+              Educational simulation recovery flow for testing purposes.
+            </p>
           </div>
-          <h2 className="text-2xl font-bold text-brand-dark">Account Recovery</h2>
-          <p className="text-xs text-brand-muted mt-1">
-            Reset your password securely to regain access to NetBanking.
-          </p>
-        </div>
 
         {isSubmitted ? (
           <div className="text-center py-4">
@@ -111,6 +118,17 @@ export const ForgotPasswordPage = () => {
           </div>
         ) : (
           <>
+            {/* Simulation Advisory */}
+            <div className="mb-5 p-3 rounded-xl bg-amber-50 border border-amber-300 text-[11px] text-amber-900 flex items-start gap-2.5">
+              <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold text-amber-950">Educational Portfolio Demo</p>
+                <p className="text-amber-800 leading-snug">
+                  Only reset passwords for accounts created within this simulation. Never use real financial account emails or credentials.
+                </p>
+              </div>
+            </div>
+
             {error && (
               <div className="mb-5 p-3.5 rounded-xl bg-red-50 border border-brand-accent/20 text-xs text-brand-accent font-medium">
                 {error}
@@ -152,6 +170,7 @@ export const ForgotPasswordPage = () => {
             </div>
           </>
         )}
+      </div>
       </div>
     </div>
   );

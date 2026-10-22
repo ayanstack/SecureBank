@@ -6,7 +6,8 @@ import { addToast } from '../../features/ui/uiSlice';
 import Logo from '../../components/common/Logo';
 import Input from '../../components/common/Input';
 import Button from '../../components/common/Button';
-import { CheckCircle2, Mail, KeyRound, ArrowRight } from 'lucide-react';
+import DemoBanner from '../../components/common/DemoBanner';
+import { CheckCircle2, Mail, KeyRound, ArrowRight, AlertTriangle } from 'lucide-react';
 
 export const VerifyEmailPage = () => {
   const [searchParams] = useSearchParams();
@@ -119,17 +120,23 @@ export const VerifyEmailPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-brand-bg p-4 sm:p-6 select-none">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
-        <div className="text-center mb-6">
-          <div className="inline-block mb-3">
-            <Logo size="default" />
+    <div className="min-h-screen flex flex-col bg-brand-bg select-none">
+      <DemoBanner />
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
+          <div className="text-center mb-6">
+            <div className="inline-block mb-3">
+              <Logo size="default" />
+            </div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-amber-500/15 text-amber-800 border border-amber-500/30 mb-2">
+              <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
+              Demo Verification Flow
+            </div>
+            <h2 className="text-2xl font-bold text-brand-dark">Verify Demo Account</h2>
+            <p className="text-xs text-brand-muted mt-1">
+              Activate your SecureBank simulation profile to access demo accounts.
+            </p>
           </div>
-          <h2 className="text-2xl font-bold text-brand-dark">Email Verification</h2>
-          <p className="text-xs text-brand-muted mt-1">
-            Activate your SecureBank NetBanking profile to access your accounts.
-          </p>
-        </div>
 
         {isVerified ? (
           <div className="text-center py-4">
@@ -237,6 +244,7 @@ export const VerifyEmailPage = () => {
             </div>
           </>
         )}
+      </div>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ import {
   Globe,
 } from 'lucide-react';
 import Logo from '../common/Logo';
+import DemoBanner from '../common/DemoBanner';
 
 export const PublicNavbar = () => {
   const location = useLocation();
@@ -32,21 +33,24 @@ export const PublicNavbar = () => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#0B1F3A] border-b border-[#1E4578] shadow-md text-[#F7FAFF]">
-      {/* Top Utility Bar (HDFC Style) */}
+      {/* Global High-Visibility Educational Simulation Banner */}
+      <DemoBanner />
+
+      {/* Top Utility Bar */}
       <div className="bg-[#081526] text-white/90 text-xs py-1.5 px-4 sm:px-8 border-b border-[#1E4578] hidden sm:block">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <span className="font-semibold text-white tracking-wide flex items-center gap-1.5">
-              <Globe className="w-3.5 h-3.5 text-[#D62839]" /> Personal Banking
+              <Globe className="w-3.5 h-3.5 text-[#D62839]" /> Simulated Digital Banking
             </span>
-            <span className="text-white/60 hover:text-white cursor-pointer transition-colors">NRI Banking</span>
-            <span className="text-white/60 hover:text-white cursor-pointer transition-colors">SME & Corporate</span>
+            <span className="text-white/60 hover:text-white cursor-pointer transition-colors">Portfolio Prototype</span>
+            <span className="text-white/60 hover:text-white cursor-pointer transition-colors">Not a Real Financial Institution</span>
           </div>
 
           <div className="flex items-center gap-5 text-white/80">
-            <div className="flex items-center gap-1.5 text-white/70">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#10B981]" />
-              <span>Full-Stack MERN Portfolio Project</span>
+            <div className="flex items-center gap-1.5 text-amber-300 font-medium">
+              <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+              <span>Full-Stack MERN Portfolio Demonstration</span>
             </div>
           </div>
         </div>
@@ -104,7 +108,7 @@ export const PublicNavbar = () => {
                   to="/register"
                   className="px-4 py-2.5 rounded-lg border border-[#1E4578] text-[#F7FAFF] hover:border-[#D62839] hover:text-[#D62839] font-semibold text-sm transition-colors duration-150"
                 >
-                  Open Account
+                  Open Demo Account
                 </Link>
 
                 <Link
@@ -112,7 +116,7 @@ export const PublicNavbar = () => {
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#D62839] hover:bg-[#BA1E2E] text-white font-semibold text-sm transition-all duration-150 shadow-glow-red"
                 >
                   <Lock className="w-4 h-4" />
-                  <span>NetBanking Login</span>
+                  <span>Demo Login</span>
                 </Link>
               </>
             )}
@@ -188,7 +192,7 @@ export const PublicNavbar = () => {
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-brand-dark text-white font-semibold text-sm shadow-sm"
                 >
                   <Lock className="w-4 h-4 text-brand-blue" />
-                  <span>NetBanking Login</span>
+                  <span>Demo Banking Login</span>
                 </Link>
 
                 <Link
@@ -196,16 +200,16 @@ export const PublicNavbar = () => {
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full text-center py-2.5 rounded-lg border border-brand-border text-brand-dark font-semibold text-sm hover:border-brand-blue"
                 >
-                  Open Digital Savings Account
+                  Open Demo Simulation Account
                 </Link>
               </>
             )}
           </div>
 
           <div className="pt-3 border-t border-brand-border text-xs text-brand-muted flex items-center justify-between">
-            <span>24x7 Customer Care: +91 6267239091</span>
+            <span>Portfolio Project Helpline: +91 6267239091</span>
             <span className="flex items-center gap-1 text-brand-success font-medium">
-              <ShieldCheck className="w-3.5 h-3.5" /> 256-Bit SSL
+              <ShieldCheck className="w-3.5 h-3.5" /> Simulation Mode
             </span>
           </div>
         </div>

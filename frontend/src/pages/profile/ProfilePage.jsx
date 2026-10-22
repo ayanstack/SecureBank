@@ -496,26 +496,26 @@ export const ProfilePage = () => {
           <CardHeader>
             <div>
               <CardTitle>
-                {user?.isTransactionPinSet ? 'Change Transaction PIN' : 'Set Transaction PIN'}
+                {user?.isTransactionPinSet ? 'Change Simulation PIN' : 'Set Simulation PIN'}
               </CardTitle>
               <CardDescription>
-                Your 4-digit PIN authorizes high-value transfers, NEFT, and IMPS payments.
+                Educational simulation PIN used to authorize demo IMPS & NEFT transfers.
               </CardDescription>
             </div>
           </CardHeader>
           <CardContent>
             <form onSubmit={handlePinSubmit} className="space-y-4 max-w-md">
+              <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-300 text-xs text-amber-900">
+                <p className="font-bold">⚠️ Educational Simulation Environment</p>
+                <p className="mt-0.5 text-amber-800">
+                  Choose a dummy 4-digit code (e.g., 1234) for testing. <strong>Never</strong> enter or reuse your real bank ATM, card, or UPI PIN.
+                </p>
+              </div>
+
               {!user?.isTransactionPinSet ? (
                 <>
-                  <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900">
-                    <p className="font-bold">PIN Not Configured</p>
-                    <p className="mt-0.5 text-amber-800">
-                      Choose a confidential 4-digit numeric code to authorize transfers.
-                    </p>
-                  </div>
-
                   <Input
-                    label="Choose 4-Digit PIN"
+                    label="Choose 4-Digit Demo PIN"
                     type="password"
                     maxLength={4}
                     placeholder="••••"
@@ -526,12 +526,12 @@ export const ProfilePage = () => {
                         pin: e.target.value.replace(/\D/g, '').slice(0, 4),
                       }))
                     }
-                    helperText="Exactly 4 numeric digits"
+                    helperText="Enter 4 numeric digits for demo authorization (e.g. 1234)"
                     required
                   />
 
                   <Button type="submit" variant="primary" size="md" isLoading={isUpdatingPin}>
-                    Activate Transaction PIN
+                    Activate Demo PIN
                   </Button>
                 </>
               ) : (

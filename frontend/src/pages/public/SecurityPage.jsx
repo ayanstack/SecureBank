@@ -11,12 +11,12 @@ export const SecurityPage = () => {
 
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 uppercase tracking-wider">
-            <ShieldCheck className="w-3.5 h-3.5" /> Security & Trust Center
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
+            <ShieldCheck className="w-3.5 h-3.5" /> Security Architecture & Defense
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Security & Safe Banking Guidelines</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Security Architecture & Safe Banking Demo</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            Learn how SecureBank protects your assets through multi-layer cryptography, and review safe NetBanking practices to keep your account immune to phishing.
+            Review the defensive engineering controls implemented in this MERN portfolio simulation: bcrypt authorization PINs, JWT session lifecycle rotation, and NoSQL injection defense.
           </p>
         </div>
       </section>
@@ -24,14 +24,14 @@ export const SecurityPage = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Anti-Phishing Advisory */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-amber-50 border border-amber-200 flex flex-col md:flex-row items-start gap-5">
+          <div className="p-6 sm:p-8 rounded-2xl bg-amber-50 border border-amber-300 flex flex-col md:flex-row items-start gap-5">
             <div className="p-3 rounded-xl bg-amber-100 text-amber-800 flex-shrink-0">
               <AlertTriangle className="w-8 h-8" />
             </div>
             <div className="space-y-2">
-              <h2 className="text-lg font-bold text-amber-900">Official Anti-Fraud & Phishing Advisory</h2>
-              <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
-                SecureBank will <strong>never</strong> ask for your login password, 4-digit transaction PIN, or email verification tokens via phone calls, SMS, WhatsApp, or emails. Never share these credentials with any individual, representative, or third-party website.
+              <h2 className="text-lg font-bold text-amber-950">Educational Project Notice & Phishing Defense Advisory</h2>
+              <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
+                SecureBank is an educational prototype and portfolio demonstration. It is <strong>NOT a real bank</strong>. This application will <strong>never</strong> request your real banking passwords, UPI PINs, ATM debit PINs, or real phone OTPs. Never input credentials from your actual bank accounts into this demonstration platform.
               </p>
             </div>
           </div>

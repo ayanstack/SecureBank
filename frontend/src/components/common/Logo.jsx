@@ -28,7 +28,7 @@ export const Logo = ({ variant = 'default', size = 'default', className = '' }) 
           Secure<span className="text-[#D62839]">Bank</span>
         </span>
         <span className="text-[9px] uppercase tracking-wider font-semibold text-[#94B4DB]">
-          Digital Banking
+          Banking Simulation
         </span>
       </div>
     </div>

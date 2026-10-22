@@ -6,7 +6,8 @@ import { addToast } from '../../features/ui/uiSlice';
 import Logo from '../../components/common/Logo';
 import Input from '../../components/common/Input';
 import Button from '../../components/common/Button';
-import { Mail, Lock, ShieldCheck, ArrowRight, CheckCircle2, Shield, Sparkles, AlertCircle } from 'lucide-react';
+import DemoBanner from '../../components/common/DemoBanner';
+import { Mail, Lock, ShieldCheck, ArrowRight, CheckCircle2, Shield, Sparkles, AlertCircle, AlertTriangle } from 'lucide-react';
 
 export const LoginPage = () => {
   const dispatch = useDispatch();
@@ -80,66 +81,81 @@ export const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-brand-bg select-none">
-      {/* Left Branding Hero Panel */}
-      <div className="lg:w-1/2 bg-brand-dark text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
-        {/* Subtle background graphics */}
-        <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-blue/20 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-brand-blue/15 blur-3xl pointer-events-none" />
+    <div className="min-h-screen flex flex-col bg-brand-bg select-none">
+      {/* Top Persistent Educational Demo Banner */}
+      <DemoBanner />
 
-        <div className="relative z-10">
-          <Logo variant="light" size="lg" />
-          <div className="mt-12 sm:mt-16">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-brand-light border border-white/20 mb-4">
-              <ShieldCheck className="w-3.5 h-3.5 text-brand-blue" />
-              RBI Regulated Banking Standard
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-              Smarter, safer, and simpler digital personal banking.
-            </h2>
-            <p className="mt-4 text-sm sm:text-base text-white/80 max-w-lg leading-relaxed">
-              Experience modern financial management with instant IMPS transfers, multi-account overview, automated statements, and bank-grade security.
-            </p>
-          </div>
-        </div>
+      <div className="flex-1 flex flex-col lg:flex-row">
+        {/* Left Branding Hero Panel */}
+        <div className="lg:w-1/2 bg-brand-dark text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+          {/* Subtle background graphics */}
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-blue/20 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-brand-blue/15 blur-3xl pointer-events-none" />
 
-        {/* Feature bullets */}
-        <div className="relative z-10 mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8 border-t border-white/10">
-          <div className="flex items-center gap-2.5 text-xs text-white/90">
-            <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-            <span>2-Factor & PIN Verified Transfers</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-xs text-white/90">
-            <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-            <span>256-Bit SSL End-to-End Encryption</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-xs text-white/90">
-            <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-            <span>Instant PDF & CSV Statements</span>
-          </div>
-          <div className="flex items-center gap-2.5 text-xs text-white/90">
-            <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-            <span>Real-time Transaction Notifications</span>
-          </div>
-        </div>
-
-        <div className="relative z-10 mt-8 text-xs text-white/40">
-          © {new Date().getFullYear()} SecureBank Ltd. All rights reserved. Safe & Secure NetBanking.
-        </div>
-      </div>
-
-      {/* Right Login Form */}
-      <div className="lg:w-1/2 flex items-center justify-center p-6 sm:p-12 lg:p-16">
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
-          <div className="text-left mb-8">
-            <div className="flex items-center gap-2 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">
-              <Shield className="w-4 h-4" /> Secure NetBanking Login
+          <div className="relative z-10">
+            <Logo variant="light" size="lg" />
+            <div className="mt-12 sm:mt-16">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-200 border border-amber-500/30 mb-4">
+                <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+                Educational Banking Simulation • Demo Only
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                MERN Full-Stack Digital Banking Simulation
+              </h2>
+              <p className="mt-4 text-sm sm:text-base text-white/80 max-w-lg leading-relaxed">
+                An open-source portfolio demonstration showcasing secure architecture: bcrypt password & PIN hashing, JWT session rotation, idempotent transfers, and real-time socket events.
+              </p>
             </div>
-            <h3 className="text-2xl font-bold text-brand-dark">Sign in to your account</h3>
-            <p className="text-xs text-brand-muted mt-1">
-              Enter your registered email address and password to continue.
-            </p>
           </div>
+
+          {/* Feature bullets */}
+          <div className="relative z-10 mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8 border-t border-white/10">
+            <div className="flex items-center gap-2.5 text-xs text-white/90">
+              <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
+              <span>Simulated 2-Factor & PIN Transfers</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-xs text-white/90">
+              <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
+              <span>256-Bit SSL End-to-End Encryption</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-xs text-white/90">
+              <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
+              <span>Sample PDF & CSV Statement Generation</span>
+            </div>
+            <div className="flex items-center gap-2.5 text-xs text-white/90">
+              <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
+              <span>Real-time Socket.IO Alert Notifications</span>
+            </div>
+          </div>
+
+          <div className="relative z-10 mt-8 text-xs text-amber-300/80">
+            © {new Date().getFullYear()} SecureBank Demo — Educational simulation portfolio project. Not a licensed bank.
+          </div>
+        </div>
+
+        {/* Right Login Form */}
+        <div className="lg:w-1/2 flex items-center justify-center p-6 sm:p-12 lg:p-16">
+          <div className="w-full max-w-md bg-white rounded-2xl shadow-panel border border-brand-border p-6 sm:p-10">
+            <div className="text-left mb-6">
+              <div className="flex items-center gap-2 text-xs font-bold text-amber-700 uppercase tracking-wider mb-2">
+                <AlertTriangle className="w-4 h-4 text-amber-600" /> Demo Banking Sign In
+              </div>
+              <h3 className="text-2xl font-bold text-brand-dark">Sign in to Demo Portal</h3>
+              <p className="text-xs text-brand-muted mt-1">
+                Enter simulated credentials or choose a 1-click test profile below.
+              </p>
+            </div>
+
+            {/* Credential harvesting warning alert */}
+            <div className="mb-6 p-3 rounded-xl bg-amber-50 border border-amber-300 text-[11px] text-amber-900 flex items-start gap-2.5">
+              <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold text-amber-950">Educational Environment Notice</p>
+                <p className="text-amber-800 leading-snug">
+                  Never enter real passwords from your personal or real-world bank accounts. Use the pre-filled demo accounts below for instant testing.
+                </p>
+              </div>
+            </div>
 
           {/* Quick Demo Credentials Card */}
           <div className="mb-6 p-3.5 rounded-xl bg-brand-light border border-brand-border text-xs">
@@ -264,23 +280,24 @@ export const LoginPage = () => {
               icon={ArrowRight}
               iconPosition="right"
             >
-              Sign In Securely
+              Sign In to Demo Portal
             </Button>
           </form>
 
           {/* Register Prompt */}
           <div className="mt-8 pt-6 border-t border-brand-border text-center">
             <p className="text-xs text-brand-muted">
-              Don't have a NetBanking account yet?{' '}
+              New to this simulation?{' '}
               <Link
                 to="/register"
                 className="font-bold text-brand-blue hover:text-brand-dark hover:underline"
               >
-                Open an Account
+                Create a Demo Profile
               </Link>
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
