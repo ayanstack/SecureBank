@@ -13,6 +13,7 @@ import {
   Shield,
   Copy,
   Check,
+  CheckCircle2,
   AlertTriangle,
 } from 'lucide-react';
 import {
@@ -247,15 +248,15 @@ export const AccountsPage = () => {
       {/* Top Action Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/15 text-amber-800 border border-amber-500/30 mb-1">
-            <AlertTriangle className="w-3.5 h-3.5 text-amber-600" />
-            Simulated Accounts • Virtual Demo Balances
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-800 border border-emerald-500/30 mb-1">
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+            Active Accounts • Real-Time Balances
           </div>
           <h2 className="text-xl sm:text-2xl font-bold text-brand-dark tracking-tight">
             Accounts Portfolio
           </h2>
           <p className="text-xs text-brand-muted mt-0.5">
-            Manage your simulated savings and current accounts. All balances are virtual demo credits.
+            Manage your savings and current accounts with real-time balance tracking.
           </p>
         </div>
 
@@ -274,7 +275,7 @@ export const AccountsPage = () => {
         <EmptyState
           icon={CreditCard}
           title="No bank accounts opened yet"
-          description="Open your first SecureBank savings account instantly with full NetBanking privileges."
+          description="Open your first CoinCraft savings account instantly with full NetBanking privileges."
           actionLabel="Create Savings Account"
           onAction={() => setIsNewAccountOpen(true)}
           className="py-12"
@@ -446,7 +447,7 @@ export const AccountsPage = () => {
         isOpen={isNewAccountOpen}
         onClose={() => setIsNewAccountOpen(false)}
         title="Open a New Bank Account"
-        description="Select the type of account you wish to create under your SecureBank profile."
+        description="Select the type of account you wish to create under your CoinCraft profile."
       >
         <form onSubmit={handleCreateAccount} className="space-y-4">
           <div className="space-y-2">

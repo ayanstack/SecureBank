@@ -281,7 +281,7 @@ export const processBankingAssistantQuery = async ({ query, userId }) => {
     // Intent 5: Explain Transaction Statuses
     if (q.includes("status") || q.includes("failed transaction") || q.includes("pending") || q.includes("why failed")) {
         return {
-            reply: "SecureBank Transaction Status Explanations:\n\n• **SUCCESS**: Funds have been debited/credited with strict double-entry ledger settlement.\n• **PENDING**: Transaction is currently awaiting banking network clearing or multi-step approval.\n• **FAILED**: Transaction could not be executed due to insufficient balance, incorrect 4-digit PIN, or daily limit exceeded.\n• **REVERSED**: An authorized transfer was cancelled or refunded, returning principal funds to the sender.",
+            reply: "CoinCraft Transaction Status Explanations:\n\n• **SUCCESS**: Funds have been debited/credited with strict double-entry ledger settlement.\n• **PENDING**: Transaction is currently awaiting banking network clearing or multi-step approval.\n• **FAILED**: Transaction could not be executed due to insufficient balance, incorrect 4-digit PIN, or daily limit exceeded.\n• **REVERSED**: An authorized transfer was cancelled or refunded, returning principal funds to the sender.",
             data: null,
             verifiedFacts: true,
             providerStatus,
@@ -320,7 +320,7 @@ export const processBankingAssistantQuery = async ({ query, userId }) => {
 
     if (q.includes("how to transfer") || q.includes("send money") || q.includes("transfer kaise kare")) {
         return {
-            reply: "How to transfer funds in SecureBank:\n1. Go to the **Fund Transfer** tab.\n2. Choose your source account (Savings/Current).\n3. Select a registered recipient or add a new beneficiary.\n4. Enter the amount (minimum ₹1, maximum ₹10,00,000 daily).\n5. Authorize the transfer using your secret 4-digit Transaction PIN.",
+            reply: "How to transfer funds in CoinCraft:\n1. Go to the **Fund Transfer** tab.\n2. Choose your source account (Savings/Current).\n3. Select a registered recipient or add a new beneficiary.\n4. Enter the amount (minimum ₹1, maximum ₹10,00,000 daily).\n5. Authorize the transfer using your secret 4-digit Transaction PIN.",
             data: null,
             verifiedFacts: true,
             providerStatus,
@@ -338,7 +338,7 @@ export const processBankingAssistantQuery = async ({ query, userId }) => {
 
     // Default intelligent assistant response with honest provider status
     return {
-        reply: `I am your SecureBank AI Assistant (Engine Mode: ${geminiKey ? "Gemini Enhanced" : "Deterministic Core"}). I can securely retrieve and verify your authorized financial data. Try asking me:\n\n• *"What is my available balance?"*\n• *"Show my 5 latest transactions"*\n• *"Summarize my monthly spending"*\n• *"Compare my spending with last month"*\n• *"Explain transaction statuses"*\n• *"Who are my registered beneficiaries?"*`,
+        reply: `I am your CoinCraft AI Assistant (Engine Mode: ${geminiKey ? "Gemini Enhanced" : "Deterministic Core"}). I can securely retrieve and verify your authorized financial data. Try asking me:\n\n• *"What is my available balance?"*\n• *"Show my 5 latest transactions"*\n• *"Summarize my monthly spending"*\n• *"Compare my spending with last month"*\n• *"Explain transaction statuses"*\n• *"Who are my registered beneficiaries?"*`,
         data: null,
         verifiedFacts: false,
         providerStatus,

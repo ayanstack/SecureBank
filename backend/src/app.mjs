@@ -164,7 +164,7 @@ const otpLimiter = rateLimit({
 app.get("/api/health", (req, res) => {
     return res.status(200).json({
         success: true,
-        message: "SecureBank API is running",
+        message: "CoinCraft API is running",
         timestamp: new Date().toISOString(),
         version: "1.0.0",
     });

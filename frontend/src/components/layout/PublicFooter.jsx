@@ -22,13 +22,13 @@ export const PublicFooter = () => {
           <div className="lg:col-span-2 space-y-4">
             <Logo variant="light" size="lg" />
             <p className="text-sm text-[#94B4DB] max-w-sm leading-relaxed">
-              SecureBank is an educational MERN full-stack banking simulation built for portfolio evaluation and technical interviews. Not a real bank or financial repository.
+              CoinCraft is a premier modern digital banking platform engineered for seamless transfers, robust security, and intelligent financial management.
             </p>
 
             <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2 max-w-sm">
-              <div className="flex items-center gap-2 text-xs font-bold text-amber-300 uppercase tracking-wider">
-                <ShieldCheck className="w-4 h-4 text-amber-400" />
-                <span>Simulation Security Architecture</span>
+              <div className="flex items-center gap-2 text-xs font-bold text-emerald-300 uppercase tracking-wider">
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                <span>Bank-Grade Security Architecture</span>
               </div>
               <p className="text-xs text-white/60">
                 Implements production-grade patterns: bcrypt salt hashing, 4-digit PIN verification, idempotent transfers, and JWT session lifecycle rotation.
@@ -119,16 +119,16 @@ export const PublicFooter = () => {
         {/* Bottom Bar: Regulatory & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>
-            &copy; {new Date().getFullYear()} SecureBank Demo — Educational Portfolio Project. Developed for technical demonstration only. Not a licensed or chartered financial institution.
+            &copy; {new Date().getFullYear()} CoinCraft. All rights reserved.
           </p>
 
           <div className="flex items-center gap-6">
             <Link to="/security" className="hover:text-white transition-colors">Security Architecture</Link>
-            <Link to="/about" className="hover:text-white transition-colors">About Project</Link>
-            <Link to="/contact" className="hover:text-white transition-colors">Developer Contact</Link>
+            <Link to="/about" className="hover:text-white transition-colors">About CoinCraft</Link>
+            <Link to="/contact" className="hover:text-white transition-colors">Contact Support</Link>
             <span className="text-brand-success font-semibold flex items-center gap-1">
               <span className="w-2 h-2 rounded-full bg-brand-success animate-pulse"></span>
-              Simulation Platform Active
+              All Systems Operational
             </span>
           </div>
         </div>

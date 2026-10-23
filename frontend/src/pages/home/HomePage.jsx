@@ -30,20 +30,20 @@ export const HomePage = () => {
 
   const faqs = [
     {
-      q: 'How do I open an account with SecureBank?',
+      q: 'How do I open an account with CoinCraft?',
       a: 'Opening an account takes less than 2 minutes. Click on "Open Account", provide your basic legal name, email, phone number, and choose your password. Once registered, verify your email with the provided token to immediately activate full banking privileges.',
     },
     {
-      q: 'How does SecureBank protect my transactions?',
+      q: 'How does CoinCraft protect my transactions?',
       a: 'All money transfers require a dedicated 4-digit Transaction PIN hashed with bcrypt. Each transfer is validated on the server with atomicity, idempotency key guarantees against double debits, and verified balance deduction before crediting the beneficiary.',
     },
     {
       q: 'What types of bank accounts are supported?',
-      a: 'SecureBank supports primary Savings Accounts with high liquidity, Current Accounts for commercial transactions, and Fixed Deposit accounts. You can also freeze or unfreeze your accounts instantly from your dashboard.',
+      a: 'CoinCraft supports primary Savings Accounts with high liquidity, Current Accounts for commercial transactions, and Fixed Deposit accounts. You can also freeze or unfreeze your accounts instantly from your dashboard.',
     },
     {
       q: 'Can I download official account statements?',
-      a: 'Yes. SecureBank generates instant cryptographic statements for any custom date range. You can download statements in CSV format or formatted PDF, or request the server to deliver them directly to your verified email.',
+      a: 'Yes. CoinCraft generates instant cryptographic statements for any custom date range. You can download statements in CSV format or formatted PDF, or request the server to deliver them directly to your verified email.',
     },
     {
       q: 'What if I forget my password or PIN?',
@@ -64,9 +64,9 @@ export const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Col: Main Marketing Copy */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-xs font-semibold text-amber-200 tracking-wide shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                Educational Banking Simulation • MERN Portfolio Demo
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-xs font-semibold text-emerald-200 tracking-wide shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Next-Gen Digital Banking • Secure & Instant
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
@@ -77,7 +77,7 @@ export const HomePage = () => {
               </h1>
 
               <p className="text-base sm:text-lg text-white/80 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                An interactive full-stack portfolio simulation demonstrating modern fintech engineering: bcrypt authorization PINs, JWT token rotation, idempotent transfers, NoSQL defense, and live socket alerts.
+                An advanced digital banking platform engineered for modern financial needs: bcrypt authorization PINs, JWT token rotation, instant transfers, and real-time security alerts.
               </p>
 
               {/* Action Buttons */}
@@ -96,7 +96,7 @@ export const HomePage = () => {
                       to="/register"
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-brand-blue hover:bg-[#0759af] text-white font-bold text-base transition-all duration-150 shadow-lg border border-blue-400/30"
                     >
-                      <span>Open Demo Account</span>
+                      <span>Open Account</span>
                       <ArrowRight className="w-5 h-5" />
                     </Link>
 
@@ -105,7 +105,7 @@ export const HomePage = () => {
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-base transition-all duration-150 border border-white/20"
                     >
                       <Lock className="w-4 h-4 text-blue-300" />
-                      <span>Demo Sign In</span>
+                      <span>Sign In</span>
                     </Link>
                   </>
                 )}
@@ -138,12 +138,12 @@ export const HomePage = () => {
                       <Lock className="w-5 h-5 text-[#D62839]" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-base text-[#F7FAFF] leading-tight">Demo Banking Gateway</h3>
-                      <p className="text-xs text-[#94B4DB]">Educational Simulation Mode</p>
+                      <h3 className="font-bold text-base text-[#F7FAFF] leading-tight">CoinCraft Banking Gateway</h3>
+                      <p className="text-xs text-[#94B4DB]">Next-Gen Digital Banking</p>
                     </div>
                   </div>
-                  <span className="px-2.5 py-1 rounded text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                    Simulation Active
+                  <span className="px-2.5 py-1 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                    Bank-Grade Security
                   </span>
                 </div>
 
@@ -151,18 +151,18 @@ export const HomePage = () => {
                 <div className="py-6 space-y-4">
                   <div className="p-4 rounded-xl bg-[#081526] border border-[#1E4578] space-y-2">
                     <div className="flex items-center justify-between text-xs text-[#94B4DB]">
-                      <span>Simulation Features</span>
+                      <span>Key Features</span>
                       <span className="font-bold text-[#F7FAFF]">MERN Architecture</span>
                     </div>
                     <ul className="text-xs space-y-1.5 text-[#F7FAFF] font-medium">
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Simulated IMPS/NEFT Money Transfer
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Instant IMPS/NEFT Money Transfer
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Account Freeze Switch & PIN Security
                       </li>
                       <li className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Sample PDF & CSV E-Statements
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Official PDF & CSV E-Statements
                       </li>
                       <li className="flex items-center gap-2">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#10B981]" /> Multi-Session JWT Device Management
@@ -190,13 +190,13 @@ export const HomePage = () => {
                         className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#D62839] hover:bg-[#BA1E2E] text-white font-bold text-sm transition-colors shadow-glow-red"
                       >
                         <Lock className="w-4 h-4" />
-                        <span>Sign In to Demo Portal</span>
+                        <span>Sign In to Portal</span>
                       </Link>
 
                       <div className="text-center">
                         <span className="text-xs text-[#94B4DB]">New visitor? </span>
                         <Link to="/register" className="text-xs font-bold text-[#D62839] hover:underline">
-                          Create a demo account
+                          Create an account
                         </Link>
                       </div>
                     </div>
@@ -204,9 +204,9 @@ export const HomePage = () => {
                 </div>
 
                 {/* Footer Advisory */}
-                <div className="pt-4 border-t border-brand-border flex items-center gap-2 text-[11px] text-amber-300/90">
-                  <ShieldCheck className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                  <span>Educational Simulation Notice: SecureBank is a portfolio project. Never submit real banking credentials, passwords, or PINs.</span>
+                <div className="pt-4 border-t border-brand-border flex items-center gap-2 text-[11px] text-emerald-300/90">
+                  <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                  <span>CoinCraft Security: Protected by 256-bit encryption and multi-factor authorization.</span>
                 </div>
               </div>
             </div>
@@ -336,7 +336,7 @@ export const HomePage = () => {
               </h2>
 
               <p className="text-sm sm:text-base text-brand-muted leading-relaxed">
-                SecureBank combines strict data validation, JWT session rotation, rate-limited endpoints, and multi-tier database isolation to provide financial safety without compromising convenience.
+                CoinCraft combines strict data validation, JWT session rotation, rate-limited endpoints, and multi-tier database isolation to provide financial safety without compromising convenience.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
@@ -370,7 +370,7 @@ export const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-xs font-bold text-brand-blue tracking-wider uppercase">Simple Onboarding</h2>
-            <p className="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Get Started with SecureBank in 3 Steps</p>
+            <p className="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Get Started with CoinCraft in 3 Steps</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
@@ -379,9 +379,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-dark text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 1
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Create Demo Profile</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Create Your Profile</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Provide test mock details and a dummy password in less than 2 minutes without sharing real sensitive data.
+                Provide basic details and set a secure password in less than 2 minutes to set up your account.
               </p>
             </div>
 
@@ -390,9 +390,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-blue text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 2
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Verify Demo Token</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Verify Your Email</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Use the simulated activation token to verify your ownership and unlock interactive simulation access.
+                Verify your email address using the activation token to unlock your account.
               </p>
             </div>
 
@@ -401,9 +401,9 @@ export const HomePage = () => {
               <div className="w-12 h-12 rounded-full bg-brand-success text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm">
                 3
               </div>
-              <h3 className="font-bold text-lg text-brand-dark mb-2">Setup Demo PIN & Transact</h3>
+              <h3 className="font-bold text-lg text-brand-dark mb-2">Setup PIN & Transact</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Configure a mock 4-digit PIN (e.g., 1234), deposit simulated funds, and test instant transfers.
+                Configure your secret 4-digit Transaction PIN to start making fast, secure transfers.
               </p>
             </div>
           </div>
@@ -413,7 +413,7 @@ export const HomePage = () => {
               to={isAuthenticated ? "/dashboard" : "/register"}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-brand-dark hover:bg-brand-blue text-white font-bold text-sm transition-colors shadow-md"
             >
-              <span>{isAuthenticated ? "Go to My Dashboard" : "Begin Demo Registration"}</span>
+              <span>{isAuthenticated ? "Go to My Dashboard" : "Begin Registration"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

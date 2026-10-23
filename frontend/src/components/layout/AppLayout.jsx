@@ -5,7 +5,6 @@ import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import MobileNav from './MobileNav';
 import ToastContainer from '../common/ToastContainer';
-import DemoBanner from '../common/DemoBanner';
 import { fetchCurrentUser } from '../../features/auth/authSlice';
 import { fetchAccounts } from '../../features/accounts/accountSlice';
 import { fetchNotifications, addLiveNotification } from '../../features/notifications/notificationSlice';
@@ -71,7 +70,6 @@ export const AppLayout = () => {
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-        <DemoBanner />
         <Navbar />
 
         <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">

@@ -34,7 +34,7 @@ export const NotFoundPage = () => {
       </div>
 
       <div className="mt-12 text-xs text-brand-muted">
-        SecureBank NetBanking Infrastructure • Protected by 256-bit SSL
+        CoinCraft NetBanking Infrastructure • Protected by 256-bit SSL
       </div>
     </div>
   );

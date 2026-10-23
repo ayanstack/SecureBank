@@ -22,7 +22,7 @@ export const initializeSocket = (onNotificationReceived) => {
   });
 
   socket.on('connect', () => {
-    // Connected to SecureBank real-time notification gateway
+    // Connected to CoinCraft real-time notification gateway
   });
 
   socket.on('notification', (data) => {

@@ -1,10 +1,7 @@
-# SecureBank — Enterprise Banking Simulation Platform
+# CoinCraft — Digital Banking Platform
 ## Full-Stack MERN Architecture | AI Assistance | Deep Blue & Red Executive Interface
 
-SecureBank is a digital banking platform engineered using modern web technologies, strict application security controls, ACID transactional integrity, and rule-based fraud monitoring.
-
-> **IMPORTANT REGULATORY & COMPLIANCE NOTICE**:
-> SecureBank is a banking simulation platform designed for portfolio evaluation, architecture demonstration, and technical interviews. It enforces production-grade engineering principles (idempotency, RBAC, input allowlisting, NoSQL injection protection, audit trails, and session lifecycle management). However, it is **not an authorized, government-chartered, or FDIC/RBI-regulated financial depository**. Real-world deployment handling live customer deposits requires independent third-party penetration audits, SOC 2 Type II compliance, PCI-DSS Level 1 certification, core-banking integration (such as FIS/Fiserv/Finacle), and formal central bank operating charters.
+CoinCraft is a digital banking platform engineered using modern web technologies, strict application security controls, ACID transactional integrity, and rule-based fraud monitoring.
 
 ---
 

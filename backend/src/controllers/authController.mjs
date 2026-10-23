@@ -67,8 +67,8 @@ export const registerUser = async (req, res) => {
         if (isEmailConfigured()) {
             sendEmail({
                 to: normalizedEmail,
-                subject: "Verify your SecureBank account",
-                text: `Welcome to SecureBank! Your email verification token is: ${verificationToken}`,
+                subject: "Verify your CoinCraft account",
+                text: `Welcome to CoinCraft! Your email verification token is: ${verificationToken}`,
             }).catch((err) => console.error("Email send error:", err.message));
         }
 
@@ -321,7 +321,7 @@ export const resendVerification = async (req, res) => {
         if (isEmailConfigured()) {
             sendEmail({
                 to: normalizedEmail,
-                subject: "SecureBank Email Verification",
+                subject: "CoinCraft Email Verification",
                 text: `Your email verification token is: ${verificationToken}`,
             }).catch((err) => console.error("Email send error:", err.message));
         }
@@ -607,11 +607,11 @@ export const forgotPassword = async (req, res) => {
         if (isEmailConfigured()) {
             sendEmail({
                 to: normalizedEmail,
-                subject: "SecureBank Password Reset Request",
-                text: `You requested a password reset for your SecureBank account.\n\nClick the link below to set a new password:\n${resetLink}\n\nThis link expires in 15 minutes.\nIf you did not request this, please ignore this email.`,
+                subject: "CoinCraft Password Reset Request",
+                text: `You requested a password reset for your CoinCraft account.\n\nClick the link below to set a new password:\n${resetLink}\n\nThis link expires in 15 minutes.\nIf you did not request this, please ignore this email.`,
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #e2e8f0; border-radius: 8px;">
-                        <h2 style="color: #0f172a; margin-bottom: 16px;">Reset Your SecureBank Password</h2>
+                        <h2 style="color: #0f172a; margin-bottom: 16px;">Reset Your CoinCraft Password</h2>
                         <p style="color: #475569; font-size: 15px; line-height: 1.5;">We received a request to reset your password. Click the button below to proceed:</p>
                         <div style="margin: 28px 0;">
                             <a href="${resetLink}" style="background-color: #0284c7; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block;">Reset Password</a>

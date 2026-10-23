@@ -68,7 +68,7 @@ export const createOTP = async (req, res) => {
         if (user && isEmailConfigured()) {
             sendEmail({
                 to: user.email,
-                subject: `Your SecureBank OTP for ${purpose.replace(/_/g, " ")}`,
+                subject: `Your CoinCraft OTP for ${purpose.replace(/_/g, " ")}`,
                 text: `Hello ${user.firstName},\n\nYour One-Time Password (OTP) is: ${otpCode}\nThis code is valid for 5 minutes.\n\nNever share your OTP with anyone.`,
             }).catch((err) => console.error("OTP email delivery error:", err.message));
         }

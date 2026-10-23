@@ -59,12 +59,12 @@ export const ServicesPage = () => {
 
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
-            <CreditCard className="w-3.5 h-3.5" /> Simulated Banking Solutions • Demo Environment
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 uppercase tracking-wider">
+            <CreditCard className="w-3.5 h-3.5" /> Digital Banking Solutions • Modern Financial Services
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Simulated Banking Features</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Comprehensive Banking Features</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            A comprehensive suite of simulated financial workflows operating exclusively on virtual test balances for portfolio demonstrations. Not a real bank.
+            A comprehensive suite of digital banking workflows operating on high-performance cloud infrastructure for fast and secure NetBanking.
           </p>
         </div>
       </section>

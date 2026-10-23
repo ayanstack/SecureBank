@@ -184,7 +184,7 @@ const startServer = async () => {
         });
 
         server.listen(PORT, () => {
-            console.log(`SecureBank server running in ${process.env.NODE_ENV || "development"} mode on port ${PORT}`);
+            console.log(`CoinCraft server running in ${process.env.NODE_ENV || "development"} mode on port ${PORT}`);
         });
     } catch (error) {
         console.error("Server startup error:", error.message);

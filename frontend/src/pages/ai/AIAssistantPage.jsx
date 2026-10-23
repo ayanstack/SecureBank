@@ -21,7 +21,7 @@ export const AIAssistantPage = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      text: 'Hello! I am your SecureBank AI Banking Assistant. I can securely check your balances, analyze monthly expenditures, list recent transactions, and guide you on statements. How can I help you today?',
+      text: 'Hello! I am your CoinCraft AI Banking Assistant. I can securely check your balances, analyze monthly expenditures, list recent transactions, and guide you on statements. How can I help you today?',
       verifiedFacts: true,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },

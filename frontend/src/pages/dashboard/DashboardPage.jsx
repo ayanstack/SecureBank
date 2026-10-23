@@ -133,7 +133,7 @@ export const DashboardPage = () => {
           {/* 360 Degree Continuously Rotating Animated Logo Badge */}
           <div
             className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center border transition-all duration-300 ${greeting.bgGlow}`}
-            title={`${greeting.text} - SecureBank`}
+            title={`${greeting.text} - CoinCraft`}
           >
             <GreetingIcon
               className={`w-6 h-6 sm:w-6.5 sm:h-6.5 ${greeting.iconColor} animate-spin-360`}
@@ -146,7 +146,7 @@ export const DashboardPage = () => {
               <span className="text-[#D62839] drop-shadow-sm">{user?.firstName || 'Valued Customer'}</span>
             </h2>
             <p className="text-xs sm:text-sm text-brand-muted mt-0.5">
-              Welcome to your SecureBank digital portal. Here is your financial snapshot.
+              Welcome to your CoinCraft digital portal. Here is your financial snapshot.
             </p>
           </div>
         </div>
@@ -191,7 +191,7 @@ export const DashboardPage = () => {
                     <ShieldCheck className="w-4 h-4 text-[#D62839]" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-white/80">
-                    SecureBank Premium NetBanking
+                    CoinCraft Premium NetBanking
                   </span>
                 </div>
 
@@ -473,7 +473,7 @@ export const DashboardPage = () => {
                 <div className="text-xs">
                   <p className="font-bold text-brand-dark">Never Share Your PIN</p>
                   <p className="text-brand-muted mt-0.5 leading-relaxed">
-                    SecureBank representatives will never ask for your 4-digit transaction PIN, password, or OTP.
+                    CoinCraft representatives will never ask for your 4-digit transaction PIN, password, or OTP.
                   </p>
                 </div>
               </div>

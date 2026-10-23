@@ -11,12 +11,12 @@ export const SecurityPage = () => {
 
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 uppercase tracking-wider">
             <ShieldCheck className="w-3.5 h-3.5" /> Security Architecture & Defense
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Security Architecture & Safe Banking Demo</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Security Architecture & Safe Banking</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            Review the defensive engineering controls implemented in this MERN portfolio simulation: bcrypt authorization PINs, JWT session lifecycle rotation, and NoSQL injection defense.
+            Review the defensive engineering controls implemented in CoinCraft: bcrypt authorization PINs, JWT session lifecycle rotation, and NoSQL injection defense.
           </p>
         </div>
       </section>
@@ -24,14 +24,14 @@ export const SecurityPage = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Anti-Phishing Advisory */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-amber-50 border border-amber-300 flex flex-col md:flex-row items-start gap-5">
-            <div className="p-3 rounded-xl bg-amber-100 text-amber-800 flex-shrink-0">
-              <AlertTriangle className="w-8 h-8" />
+          <div className="p-6 sm:p-8 rounded-2xl bg-blue-50 border border-blue-200 flex flex-col md:flex-row items-start gap-5">
+            <div className="p-3 rounded-xl bg-blue-100 text-brand-blue flex-shrink-0">
+              <ShieldCheck className="w-8 h-8 text-brand-blue" />
             </div>
             <div className="space-y-2">
-              <h2 className="text-lg font-bold text-amber-950">Educational Project Notice & Phishing Defense Advisory</h2>
-              <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-                SecureBank is an educational prototype and portfolio demonstration. It is <strong>NOT a real bank</strong>. This application will <strong>never</strong> request your real banking passwords, UPI PINs, ATM debit PINs, or real phone OTPs. Never input credentials from your actual bank accounts into this demonstration platform.
+              <h2 className="text-lg font-bold text-blue-950">Bank-Grade Defense & Anti-Phishing Advisory</h2>
+              <p className="text-xs sm:text-sm text-blue-900 leading-relaxed">
+                CoinCraft employs multiple security tiers to safeguard your funds and identity. CoinCraft will <strong>never</strong> ask for your login passwords, ATM/UPI PINs, or confidential tokens over email, SMS, or phone. Never share your credentials with anyone.
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export const SecurityPage = () => {
                 <CheckCircle2 className="w-5 h-5 text-brand-success flex-shrink-0 mt-0.5" />
                 <div>
                   <h5 className="font-bold text-xs text-brand-dark">Verify the Browser Address Bar</h5>
-                  <p className="text-xs text-brand-muted mt-0.5">Ensure you are connected to the official SecureBank portal domain with a valid HTTPS lock icon.</p>
+                  <p className="text-xs text-brand-muted mt-0.5">Ensure you are connected to the official CoinCraft portal domain with a valid HTTPS lock icon.</p>
                 </div>
               </div>
 

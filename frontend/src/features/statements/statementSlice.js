@@ -78,7 +78,7 @@ export const downloadCSVStatement = async (accountId, accountNumber = '') => {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `SecureBank_Statement_${accountNumber || accountId}.csv`);
+    link.setAttribute('download', `CoinCraft_Statement_${accountNumber || accountId}.csv`);
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -100,7 +100,7 @@ export const downloadPDFStatement = async (accountId, accountNumber = '') => {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `SecureBank_Statement_${accountNumber || accountId}.pdf`);
+    link.setAttribute('download', `CoinCraft_Statement_${accountNumber || accountId}.pdf`);
     document.body.appendChild(link);
     link.click();
     link.remove();

@@ -115,7 +115,7 @@ const createStatementPDF = async (account, transactions) => {
             .fillColor("#FFFFFF")
             .font("Helvetica-Bold")
             .fontSize(23)
-            .text("SecureBank", 40, 27);
+            .text("CoinCraft", 40, 27);
 
         doc
             .font("Helvetica")
@@ -624,7 +624,7 @@ export const downloadStatementCSV = async (req, res) => {
             ...rows.map((row) => row.map(safeCSV).join(",")),
         ].join("\r\n");
 
-        const filename = `SecureBank-Statement-${account.accountNumber}.csv`;
+        const filename = `CoinCraft-Statement-${account.accountNumber}.csv`;
 
         res.setHeader("Content-Type", "text/csv; charset=utf-8");
         res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
@@ -671,7 +671,7 @@ export const downloadStatementPDF = async (req, res) => {
         res.setHeader("Content-Type", "application/pdf");
         res.setHeader(
             "Content-Disposition",
-            `attachment; filename="SecureBank-Statement-${account.accountNumber}.pdf"`
+            `attachment; filename="CoinCraft-Statement-${account.accountNumber}.pdf"`
         );
 
         return res.status(200).send(pdfBuffer);
@@ -747,13 +747,13 @@ export const emailAccountStatement = async (req, res) => {
         });
 
         await transporter.sendMail({
-            from: `"SecureBank" <${process.env.EMAIL_USER}>`,
+            from: `"CoinCraft" <${process.env.EMAIL_USER}>`,
             to: email.trim(),
-            subject: "Your SecureBank Account Statement",
+            subject: "Your CoinCraft Account Statement",
             text: `Your account statement for account ending ${account.accountNumber.slice(-4)} is attached as a PDF.`,
             attachments: [
                 {
-                    filename: `SecureBank-Statement-${account.accountNumber}.pdf`,
+                    filename: `CoinCraft-Statement-${account.accountNumber}.pdf`,
                     content: pdfBuffer,
                     contentType: "application/pdf",
                 },

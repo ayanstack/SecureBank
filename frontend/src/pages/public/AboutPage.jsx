@@ -14,12 +14,12 @@ export const AboutPage = () => {
       {/* Header Banner */}
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
-            <Landmark className="w-3.5 h-3.5" /> Project Overview & Architecture
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 uppercase tracking-wider">
+            <Landmark className="w-3.5 h-3.5" /> Platform Overview & Architecture
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">About SecureBank (Simulation)</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">About CoinCraft</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            An open-source educational banking prototype engineered to demonstrate full-stack security patterns: bcrypt PIN hashing, JWT session rotation, atomic MongoDB transactions, and defensive input validation.
+            A modern digital banking platform engineered to provide reliable, enterprise-grade fintech solutions: bcrypt PIN hashing, JWT session rotation, atomic MongoDB transactions, and defensive input validation.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export const AboutPage = () => {
               </div>
               <h2 className="text-xl font-bold text-brand-dark">Our Engineering Philosophy</h2>
               <p className="text-sm text-brand-muted leading-relaxed">
-                SecureBank was designed to eliminate the vulnerabilities of legacy financial infrastructure. Every endpoint is strictly validated, every transaction enforces database-level idempotency to prevent double-debits, and every user session is actively monitored for token reuse.
+                CoinCraft was designed to eliminate the vulnerabilities of legacy financial infrastructure. Every endpoint is strictly validated, every transaction enforces database-level idempotency to prevent double-debits, and every user session is actively monitored for token reuse.
               </p>
             </div>
 
@@ -45,7 +45,7 @@ export const AboutPage = () => {
               </div>
               <h2 className="text-xl font-bold text-brand-dark">Security-First Banking Architecture</h2>
               <p className="text-sm text-brand-muted leading-relaxed">
-                We demonstrate defensive security without compromise: 256-bit AES encryption, bcrypt cryptographic salting, Transaction PIN authorization, and instant account freezing capabilities.
+                We deliver defensive security without compromise: 256-bit AES encryption, bcrypt cryptographic salting, Transaction PIN authorization, and instant account freezing capabilities.
               </p>
             </div>
           </div>
@@ -80,14 +80,14 @@ export const AboutPage = () => {
           {/* CTA Box */}
           <div className="p-8 rounded-2xl bg-brand-dark text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
             <div>
-              <h3 className="text-xl font-bold">Explore the Interactive Banking Simulation</h3>
-              <p className="text-xs sm:text-sm text-white/70 mt-1">Create a demo profile in under 2 minutes with simulated data to test features.</p>
+              <h3 className="text-xl font-bold">Experience CoinCraft Digital Banking</h3>
+              <p className="text-xs sm:text-sm text-white/70 mt-1">Create an account in under 2 minutes and experience next-gen financial management.</p>
             </div>
             <Link
               to={isAuthenticated ? "/dashboard" : "/register"}
               className="px-6 py-3 rounded-xl bg-brand-blue hover:bg-[#0759af] text-white font-bold text-sm inline-flex items-center gap-2 flex-shrink-0"
             >
-              <span>{isAuthenticated ? "Go to My Dashboard" : "Open Demo Account"}</span>
+              <span>{isAuthenticated ? "Go to My Dashboard" : "Open Account"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
