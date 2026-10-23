@@ -254,7 +254,7 @@ export const BeneficiariesPage = () => {
                         <h4 className="text-sm font-bold text-brand-dark">{b.name}</h4>
                         <span className="text-[10px] text-brand-muted flex items-center gap-1">
                           <Building className="w-3 h-3" />
-                          {b.bankName || 'CoinCraft / Partner Bank'}
+                          {b.bankName || 'SecureBank / Partner Bank'}
                         </span>
                       </div>
                     </div>

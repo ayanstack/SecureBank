@@ -403,7 +403,7 @@ export const StatementsPage = () => {
             value={recipientEmail}
             onChange={(e) => setRecipientEmail(e.target.value)}
             icon={Mail}
-            helperText="The statement will be dispatched via CoinCraft Secure SMTP"
+            helperText="The statement will be dispatched via SecureBank Nodemailer SMTP"
             required
           />
 

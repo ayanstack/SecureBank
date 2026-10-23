@@ -45,7 +45,7 @@ const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 export const AppRoutes = () => {
   return (
-    <Suspense fallback={<LoadingSpinner fullScreen message="Loading CoinCraft portal..." />}>
+    <Suspense fallback={<LoadingSpinner fullScreen message="Loading SecureBank portal..." />}>
       <Routes>
         {/* Public Marketing & Informational Routes */}
         <Route path="/" element={<HomePage />} />

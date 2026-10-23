@@ -40,7 +40,7 @@ export const sendEmail = async ({ to, subject, text, html, attachments }) => {
 
     try {
         const info = await transporter.sendMail({
-            from: `"CoinCraft" <${process.env.EMAIL_USER}>`,
+            from: `"SecureBank" <${process.env.EMAIL_USER}>`,
             to,
             subject,
             text,

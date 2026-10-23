@@ -6,6 +6,7 @@ import { addToast } from '../../features/ui/uiSlice';
 import Logo from '../../components/common/Logo';
 import Input from '../../components/common/Input';
 import Button from '../../components/common/Button';
+import DemoBanner from '../../components/common/DemoBanner';
 import { Mail, Lock, User, Phone, ShieldCheck, ArrowRight, CheckCircle2, AlertCircle, AlertTriangle } from 'lucide-react';
 
 export const RegisterPage = () => {
@@ -87,6 +88,9 @@ export const RegisterPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-brand-bg select-none">
+      {/* Top Persistent Educational Demo Banner */}
+      <DemoBanner />
+
       <div className="flex-1 flex flex-col lg:flex-row">
         {/* Left Branding Hero */}
         <div className="lg:w-1/2 bg-brand-dark text-white p-8 sm:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
@@ -96,15 +100,15 @@ export const RegisterPage = () => {
           <div className="relative z-10">
             <Logo variant="light" size="lg" />
             <div className="mt-12 sm:mt-16">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 mb-4">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                Join CoinCraft Banking
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-200 border border-amber-500/30 mb-4">
+                <AlertTriangle className="w-3.5 h-3.5 text-amber-400" />
+                Educational Simulation Account
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-                Open a Digital Banking Account
+                Open a Simulated Banking Account (Demo Mode).
               </h2>
               <p className="mt-4 text-sm sm:text-base text-white/80 max-w-lg leading-relaxed">
-                Experience high-performance modern digital banking with instant onboarding, multi-tier security, and real-time transaction processing.
+                Explore full-stack banking features in an educational simulation built for portfolio demonstrations and technical interviews.
               </p>
             </div>
           </div>
@@ -112,24 +116,24 @@ export const RegisterPage = () => {
           <div className="relative z-10 mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8 border-t border-white/10">
             <div className="flex items-center gap-2.5 text-xs text-white/90">
               <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-              <span>Instant Digital Onboarding</span>
+              <span>Simulated Instant Onboarding</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-white/90">
               <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-              <span>Dedicated Savings & Current Accounts</span>
+              <span>Dedicated Mock Savings Account</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-white/90">
               <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-              <span>Automated Statement Exports</span>
+              <span>Sample Statement Exports</span>
             </div>
             <div className="flex items-center gap-2.5 text-xs text-white/90">
               <CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />
-              <span>Fast IMPS / NEFT Support</span>
+              <span>Simulated IMPS / NEFT Support</span>
             </div>
           </div>
 
-          <div className="relative z-10 mt-8 text-xs text-white/60">
-            © {new Date().getFullYear()} CoinCraft. All rights reserved.
+          <div className="relative z-10 mt-8 text-xs text-amber-300/80">
+            © {new Date().getFullYear()} SecureBank Demo — Educational simulation portfolio project. Not a licensed bank.
           </div>
         </div>
 
@@ -144,7 +148,7 @@ export const RegisterPage = () => {
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark mb-2">Registration Complete!</h3>
                 <p className="text-xs text-brand-muted max-w-sm mx-auto mb-6 leading-relaxed">
-                  Your CoinCraft profile has been created successfully. Please verify your email address to activate your account and start banking.
+                  Your SecureBank profile has been created successfully. Please verify your email address to activate your account and start banking.
                 </p>
 
                 <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 text-left mb-6">
@@ -182,22 +186,22 @@ export const RegisterPage = () => {
             ) : (
               <>
                 <div className="text-left mb-6">
-                  <div className="flex items-center gap-2 text-xs font-bold text-brand-blue uppercase tracking-wider mb-2">
-                    <ShieldCheck className="w-4 h-4 text-brand-blue" /> Seamless Registration
+                  <div className="flex items-center gap-2 text-xs font-bold text-amber-700 uppercase tracking-wider mb-2">
+                    <AlertTriangle className="w-4 h-4 text-amber-600" /> Educational Simulation
                   </div>
-                  <h3 className="text-2xl font-bold text-brand-dark">Create Your Profile</h3>
+                  <h3 className="text-2xl font-bold text-brand-dark">Create Demo Profile</h3>
                   <p className="text-xs text-brand-muted mt-1">
-                    Set up your account to get started with CoinCraft NetBanking.
+                    Set up a test profile to explore the MERN banking simulation.
                   </p>
                 </div>
 
-                {/* Security Safety Notice */}
-                <div className="mb-6 p-3 rounded-xl bg-blue-50 border border-blue-200 text-[11px] text-blue-900 flex items-start gap-2.5">
-                  <ShieldCheck className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
+                {/* Simulation Safety Warning */}
+                <div className="mb-6 p-3 rounded-xl bg-amber-50 border border-amber-300 text-[11px] text-amber-900 flex items-start gap-2.5">
+                  <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-blue-950">Security Notice</p>
-                    <p className="text-blue-800 leading-snug">
-                      Choose a secure password and remember to configure your 4-digit PIN to authorize fund transfers.
+                    <p className="font-bold text-amber-950">Never Submit Real Banking Data</p>
+                    <p className="text-amber-800 leading-snug">
+                      This is an educational prototype. Do NOT submit real bank passwords, card PINs, or real personal phone numbers.
                     </p>
                   </div>
                 </div>
@@ -305,7 +309,7 @@ export const RegisterPage = () => {
                     icon={ArrowRight}
                     iconPosition="right"
                   >
-                    Create Account
+                    Create Demo Profile
                   </Button>
                 </form>
 
@@ -316,7 +320,7 @@ export const RegisterPage = () => {
                       to="/login"
                       className="font-bold text-brand-blue hover:text-brand-dark hover:underline"
                     >
-                      Sign In
+                      Sign In to Demo
                     </Link>
                   </p>
                 </div>

@@ -1,5 +1,5 @@
 /**
- * Monetary & Display Formatters for CoinCraft
+ * Monetary & Display Formatters for SecureBank
  */
 
 // Formats number to Indian Rupee (₹) format with 2 decimals

@@ -18,12 +18,12 @@ export const ContactPage = () => {
 
       <section className="bg-gradient-to-r from-[#002b59] to-[#003b7a] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-[#001f3f]">
         <div className="max-w-7xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 uppercase tracking-wider">
-            <Phone className="w-3.5 h-3.5" /> Customer Contact Desk
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 uppercase tracking-wider">
+            <Phone className="w-3.5 h-3.5" /> Project Contact Desk
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Customer Support & Contact</h1>
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">Portfolio Contact & Feedback</h1>
           <p className="text-sm sm:text-base text-white/80 max-w-2xl">
-            Reach out regarding technical assistance, account inquiries, or service feedback. Our team is available 24x7.
+            Reach out regarding technical architecture inquiries, recruitment opportunities, or portfolio feedback. This is an educational demonstration project.
           </p>
         </div>
       </section>
@@ -102,7 +102,7 @@ export const ContactPage = () => {
                     </div>
                     <h4 className="font-bold text-base text-emerald-900">Message Received</h4>
                     <p className="text-xs text-emerald-800 max-w-md mx-auto">
-                      Thank you for contacting CoinCraft. Your inquiry ticket #CC-{Math.floor(100000 + Math.random() * 900000)} has been logged. An officer will respond to your registered email shortly.
+                      Thank you for contacting SecureBank. Your inquiry ticket #SB-{Math.floor(100000 + Math.random() * 900000)} has been logged. An officer will respond to your registered email shortly.
                     </p>
                     <button
                       type="button"

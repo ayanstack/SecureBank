@@ -43,7 +43,7 @@ export const AdminLayout = () => {
               <ShieldAlert className="w-5 h-5" />
             </div>
             <div>
-              <span className="font-extrabold text-sm text-white tracking-tight block">CoinCraft</span>
+              <span className="font-extrabold text-sm text-white tracking-tight block">SecureBank</span>
               <span className="text-[10px] uppercase font-bold tracking-widest text-rose-400">Admin Console</span>
             </div>
           </div>

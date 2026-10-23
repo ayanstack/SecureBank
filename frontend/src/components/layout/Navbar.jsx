@@ -56,7 +56,7 @@ export const Navbar = () => {
     if (path.startsWith('/statements')) return 'Account Statements';
     if (path.startsWith('/notifications')) return 'Security & Alerts';
     if (path.startsWith('/profile')) return 'Profile & Security Settings';
-    return 'CoinCraft Online';
+    return 'SecureBank Online';
   };
 
   const handleLogout = async () => {
@@ -92,7 +92,7 @@ export const Navbar = () => {
           </h1>
           <div className="hidden sm:flex items-center gap-1.5 text-[11px] text-[#94B4DB]">
             <Shield className="w-3 h-3 text-[#10B981]" />
-            <span>Secure Banking Session • 256-Bit SSL Encrypted</span>
+            <span>Educational Banking Session • Simulation Mode</span>
           </div>
         </div>
       </div>

@@ -403,8 +403,8 @@ export const TransferPage = () => {
       <Modal
         isOpen={isConfirmModalOpen}
         onClose={() => setIsConfirmModalOpen(false)}
-        title="Authorize Transfer"
-        description="Review transfer details and authorize using your 4-digit PIN"
+        title="Authorize Simulated Transfer"
+        description="Educational simulation: Review transfer details and authorize using your demo PIN"
       >
         <form onSubmit={handleExecuteTransfer} className="space-y-4">
           <div className="p-4 rounded-xl bg-brand-light/70 border border-brand-border space-y-2 text-xs">
@@ -430,25 +430,25 @@ export const TransferPage = () => {
             </div>
             <div className="flex justify-between">
               <span className="text-brand-muted">Transfer Fee:</span>
-              <span className="font-bold text-brand-success">₹0.00 (Free IMPS)</span>
+              <span className="font-bold text-brand-success">₹0.00 (Simulated IMPS)</span>
             </div>
           </div>
 
-          <div className="p-2.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-900 text-[11px] font-medium flex items-center gap-2">
-            <Lock className="w-4 h-4 text-brand-blue flex-shrink-0" />
-            <span>Authorization: Enter your secret 4-digit Transaction PIN to complete this transfer.</span>
+          <div className="p-2.5 rounded-lg bg-amber-50 border border-amber-300 text-amber-900 text-[11px] font-medium flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0" />
+            <span>Simulation Mode: Use your demo PIN (e.g. 1234). Do NOT enter real bank ATM or UPI PINs.</span>
           </div>
 
           <div>
             <Input
-              label="4-Digit Transaction PIN"
+              label="4-Digit Simulation PIN"
               type="password"
               maxLength={4}
               placeholder="••••"
               value={transactionPin}
               onChange={(e) => setTransactionPin(e.target.value.replace(/\D/g, '').slice(0, 4))}
               icon={Lock}
-              helperText="Enter your 4-digit Transaction PIN to authenticate."
+              helperText="Enter your 4-digit demo PIN. Never submit real financial PINs."
               required
               autoFocus
             />
